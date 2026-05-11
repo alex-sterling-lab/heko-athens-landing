@@ -51,6 +51,8 @@
     .hero-slide {
       position: absolute; inset: 0;
       background-size: cover; background-position: center;
+      background-repeat: no-repeat;
+      image-rendering: -webkit-optimize-contrast;
       opacity: 0;
       animation: heroSlide 18s ease-in-out infinite;
     }
@@ -412,9 +414,9 @@
 <!-- ═══════════════ HERO ═══════════════ -->
 <section class="hero">
   <div class="hero-slides">
-    <div class="hero-slide" style="background-image:url('photos/bedroom.jpg')"></div>
     <div class="hero-slide" style="background-image:url('photos/room.jpg')"></div>
-    <div class="hero-slide" style="background-image:url('photos/desk.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('photos/kitchen.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('photos/bathroom.jpg')"></div>
   </div>
   <div class="stars"></div>
   <div class="moon"></div>
