@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Heko Collection Athens 2 — Бутик-отель в Афинах</title>
+  <title>Heko Collection Athens 2 — Boutique Hotel in Athens, Greece</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
@@ -45,8 +45,6 @@
       overflow: hidden;
       padding: 100px 24px 140px;
     }
-
-    /* layered sky gradient */
     .hero::before {
       content: '';
       position: absolute; inset: 0;
@@ -56,8 +54,6 @@
         radial-gradient(ellipse 50%  35% at 85%  15%, rgba(20,50,120,.5)   0%, transparent 55%),
         linear-gradient(180deg, #020810 0%, #05101F 40%, #081528 70%, #0B1826 100%);
     }
-
-    /* grain texture */
     .hero::after {
       content: '';
       position: absolute; inset: 0;
@@ -66,11 +62,7 @@
       pointer-events: none;
     }
 
-    /* stars via box-shadow */
-    .stars {
-      position: absolute; inset: 0;
-      pointer-events: none;
-    }
+    .stars { position: absolute; inset: 0; pointer-events: none; }
     .stars::before, .stars::after {
       content: '';
       position: absolute;
@@ -80,54 +72,30 @@
     }
     .stars::before {
       box-shadow:
-        88px  32px 0 rgba(255,255,255,.65),
-        214px  9px 0 rgba(255,255,255,.45),
-        356px 48px 0 rgba(255,255,255,.55),
-        497px 18px 0 rgba(255,255,255,.35),
-        631px 41px 0 rgba(255,255,255,.6),
-        789px  6px 0 rgba(255,255,255,.4),
-        932px 37px 0 rgba(255,255,255,.5),
-       1088px 14px 0 rgba(255,255,255,.35),
-       1231px 52px 0 rgba(255,255,255,.55),
-       1370px 28px 0 rgba(255,255,255,.4),
-        42px 118px 0 rgba(255,255,255,.3),
-       173px 142px 0 rgba(255,255,255,.5),
-       308px  98px 0 rgba(255,255,255,.4),
-       451px 160px 0 rgba(255,255,255,.3),
-       583px 125px 0 rgba(255,255,255,.55),
-       712px 105px 0 rgba(255,255,255,.35),
-       848px 148px 0 rgba(255,255,255,.45),
-       994px 115px 0 rgba(255,255,255,.5),
-      1145px  88px 0 rgba(255,255,255,.35),
-      1298px 138px 0 rgba(255,255,255,.45),
-        19px 205px 0 rgba(255,255,255,.4),
-       162px 228px 0 rgba(255,255,255,.3),
-       295px 192px 0 rgba(255,255,255,.5),
-       438px 248px 0 rgba(255,255,255,.35),
-       572px 210px 0 rgba(255,255,255,.45);
+        88px  32px 0 rgba(255,255,255,.65), 214px  9px 0 rgba(255,255,255,.45),
+        356px 48px 0 rgba(255,255,255,.55), 497px 18px 0 rgba(255,255,255,.35),
+        631px 41px 0 rgba(255,255,255,.6),  789px  6px 0 rgba(255,255,255,.4),
+        932px 37px 0 rgba(255,255,255,.5), 1088px 14px 0 rgba(255,255,255,.35),
+       1231px 52px 0 rgba(255,255,255,.55),1370px 28px 0 rgba(255,255,255,.4),
+        42px 118px 0 rgba(255,255,255,.3),  173px 142px 0 rgba(255,255,255,.5),
+       308px  98px 0 rgba(255,255,255,.4),  451px 160px 0 rgba(255,255,255,.3),
+       583px 125px 0 rgba(255,255,255,.55), 712px 105px 0 rgba(255,255,255,.35),
+       848px 148px 0 rgba(255,255,255,.45), 994px 115px 0 rgba(255,255,255,.5),
+      1145px  88px 0 rgba(255,255,255,.35),1298px 138px 0 rgba(255,255,255,.45);
     }
     .stars::after {
       box-shadow:
-        105px 280px 0 rgba(255,255,255,.3),
-        247px 315px 0 rgba(255,255,255,.45),
-        389px 272px 0 rgba(255,255,255,.35),
-        521px 308px 0 rgba(255,255,255,.5),
-        664px 285px 0 rgba(255,255,255,.3),
-        796px 320px 0 rgba(255,255,255,.4),
-        938px 275px 0 rgba(255,255,255,.55),
-       1072px 305px 0 rgba(255,255,255,.3),
-       1218px 280px 0 rgba(255,255,255,.45),
-       1352px 312px 0 rgba(255,255,255,.35),
-        67px 370px 0 rgba(255,255,255,.4),
-       198px 352px 0 rgba(255,255,255,.3),
-       342px 388px 0 rgba(255,255,255,.5),
-       485px 362px 0 rgba(255,255,255,.35),
-       618px 395px 0 rgba(255,255,255,.45),
-       755px 358px 0 rgba(255,255,255,.3),
-       891px 382px 0 rgba(255,255,255,.55);
+        105px 280px 0 rgba(255,255,255,.3), 247px 315px 0 rgba(255,255,255,.45),
+        389px 272px 0 rgba(255,255,255,.35), 521px 308px 0 rgba(255,255,255,.5),
+        664px 285px 0 rgba(255,255,255,.3),  796px 320px 0 rgba(255,255,255,.4),
+        938px 275px 0 rgba(255,255,255,.55),1072px 305px 0 rgba(255,255,255,.3),
+       1218px 280px 0 rgba(255,255,255,.45),1352px 312px 0 rgba(255,255,255,.35),
+         67px 370px 0 rgba(255,255,255,.4),  198px 352px 0 rgba(255,255,255,.3),
+        342px 388px 0 rgba(255,255,255,.5),  485px 362px 0 rgba(255,255,255,.35),
+        618px 395px 0 rgba(255,255,255,.45), 755px 358px 0 rgba(255,255,255,.3),
+        891px 382px 0 rgba(255,255,255,.55);
     }
 
-    /* moon */
     .moon {
       position: absolute;
       top: 64px; right: 10%;
@@ -142,7 +110,6 @@
       50%      { box-shadow: 0 0 45px rgba(228,190,106,.6),  0 0 100px rgba(228,190,106,.25); }
     }
 
-    /* Acropolis silhouette */
     .acropolis {
       position: absolute;
       bottom: 0; left: 50%;
@@ -152,116 +119,69 @@
       pointer-events: none;
     }
 
-    /* hero content */
     .hero-inner { position: relative; z-index: 2; }
 
     .eyebrow {
       font-family: var(--fb);
-      font-size: 10px;
-      font-weight: 400;
-      letter-spacing: .45em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 28px;
-      opacity: 0;
-      animation: fadeUp .9s ease forwards .3s;
+      font-size: 10px; font-weight: 400;
+      letter-spacing: .45em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 28px;
+      opacity: 0; animation: fadeUp .9s ease forwards .3s;
     }
-
     .hero-name {
       font-family: var(--fd);
       font-size: clamp(60px, 12vw, 130px);
-      font-weight: 300;
-      line-height: .88;
-      letter-spacing: -.01em;
-      color: var(--cream);
-      margin-bottom: 8px;
-      opacity: 0;
-      animation: fadeUp .9s ease forwards .5s;
+      font-weight: 300; line-height: .88; letter-spacing: -.01em;
+      color: var(--cream); margin-bottom: 8px;
+      opacity: 0; animation: fadeUp .9s ease forwards .5s;
     }
-    .hero-name em {
-      font-style: italic;
-      color: var(--gold-lt);
-    }
-
+    .hero-name em { font-style: italic; color: var(--gold-lt); }
     .hero-sub {
       font-family: var(--fd);
-      font-size: clamp(13px, 2.2vw, 20px);
-      font-weight: 300;
-      letter-spacing: .3em;
-      text-transform: uppercase;
-      color: var(--muted);
+      font-size: clamp(13px, 2.2vw, 20px); font-weight: 300;
+      letter-spacing: .3em; text-transform: uppercase; color: var(--muted);
       margin-bottom: 40px;
-      opacity: 0;
-      animation: fadeUp .9s ease forwards .65s;
+      opacity: 0; animation: fadeUp .9s ease forwards .65s;
     }
-
     .rule {
       width: 72px; height: 1px;
       background: linear-gradient(90deg, transparent, var(--gold), transparent);
       margin: 0 auto 40px;
-      opacity: 0;
-      animation: fadeIn .9s ease forwards .78s;
+      opacity: 0; animation: fadeIn .9s ease forwards .78s;
     }
-
     .hero-tagline {
       font-family: var(--fd);
-      font-size: clamp(19px, 3.2vw, 28px);
-      font-style: italic;
-      font-weight: 300;
-      color: rgba(242,232,213,.72);
-      line-height: 1.55;
-      max-width: 480px;
-      margin: 0 auto 64px;
-      opacity: 0;
-      animation: fadeUp .9s ease forwards .9s;
+      font-size: clamp(19px, 3.2vw, 28px); font-style: italic; font-weight: 300;
+      color: rgba(242,232,213,.72); line-height: 1.55;
+      max-width: 480px; margin: 0 auto 64px;
+      opacity: 0; animation: fadeUp .9s ease forwards .9s;
     }
 
-    /* CTA button */
     .btn {
-      display: inline-block;
-      position: relative;
+      display: inline-block; position: relative;
       padding: 18px 60px;
-      border: 1px solid var(--gold);
-      color: var(--gold);
-      font-family: var(--fb);
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: .38em;
-      text-transform: uppercase;
-      text-decoration: none;
-      overflow: hidden;
-      transition: color .35s ease;
-      opacity: 0;
-      animation: fadeUp .9s ease forwards 1.05s;
+      border: 1px solid var(--gold); color: var(--gold);
+      font-family: var(--fb); font-size: 11px; font-weight: 500;
+      letter-spacing: .38em; text-transform: uppercase; text-decoration: none;
+      overflow: hidden; transition: color .35s ease;
+      opacity: 0; animation: fadeUp .9s ease forwards 1.05s;
     }
     .btn::before {
-      content: '';
-      position: absolute; inset: 0;
-      background: var(--gold);
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform .42s cubic-bezier(.25,.46,.45,.94);
+      content: ''; position: absolute; inset: 0;
+      background: var(--gold); transform: scaleX(0);
+      transform-origin: left; transition: transform .42s cubic-bezier(.25,.46,.45,.94);
     }
     .btn:hover { color: var(--bg); }
     .btn:hover::before { transform: scaleX(1); }
     .btn span { position: relative; z-index: 1; }
 
-    /* scroll indicator */
     .scroll-hint {
-      position: absolute;
-      bottom: 36px; left: 50%;
+      position: absolute; bottom: 36px; left: 50%;
       transform: translateX(-50%);
-      display: flex; flex-direction: column;
-      align-items: center; gap: 10px;
-      opacity: 0;
-      animation: fadeIn 1s ease forwards 1.6s;
+      display: flex; flex-direction: column; align-items: center; gap: 10px;
+      opacity: 0; animation: fadeIn 1s ease forwards 1.6s;
     }
-    .scroll-hint span {
-      font-size: 9px;
-      letter-spacing: .35em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
+    .scroll-hint span { font-size: 9px; letter-spacing: .35em; text-transform: uppercase; color: var(--muted); }
     .scroll-tick {
       width: 1px; height: 44px;
       background: linear-gradient(180deg, var(--gold), transparent);
@@ -272,356 +192,159 @@
       50%      { opacity: 1;   transform: scaleY(1.08); }
     }
 
-    /* ─── MEANDER DIVIDER ───────────────────────── */
+    /* ─── MEANDER ───────────────────────────────── */
     .meander {
-      background: var(--bg2);
-      height: 28px;
-      position: relative;
-      overflow: hidden;
+      background: var(--bg2); height: 28px;
+      position: relative; overflow: hidden;
     }
     .meander::before {
-      content: '';
-      position: absolute; inset: 0;
-      background-image: repeating-linear-gradient(
-        90deg,
-        var(--line) 0px,  var(--line) 1px,
-        transparent 1px, transparent 8px
-      ),
-      repeating-linear-gradient(
-        0deg,
-        var(--line) 0px,  var(--line) 1px,
-        transparent 1px, transparent 8px
-      );
+      content: ''; position: absolute; inset: 0;
+      background-image:
+        repeating-linear-gradient(90deg, var(--line) 0px, var(--line) 1px, transparent 1px, transparent 8px),
+        repeating-linear-gradient(0deg,  var(--line) 0px, var(--line) 1px, transparent 1px, transparent 8px);
       background-size: 8px 8px;
       mask-image: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
     }
 
     /* ─── PILLARS ───────────────────────────────── */
-    .pillars {
-      background: var(--bg2);
-      padding: 90px 32px;
-    }
+    .pillars { background: var(--bg2); padding: 90px 32px; }
     .pillars-inner {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      max-width: 960px;
-      margin: 0 auto;
-      border: 1px solid var(--line);
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      max-width: 960px; margin: 0 auto; border: 1px solid var(--line);
     }
     .pillar {
-      padding: 56px 36px;
-      text-align: center;
-      border-right: 1px solid var(--line);
-      transition: background .3s;
+      padding: 56px 36px; text-align: center;
+      border-right: 1px solid var(--line); transition: background .3s;
     }
     .pillar:last-child { border-right: none; }
     .pillar:hover { background: rgba(200,149,60,.035); }
+    .pillar-glyph { font-size: 28px; display: block; margin-bottom: 24px; line-height: 1; filter: saturate(.6); }
+    .pillar-title { font-family: var(--fd); font-size: 24px; font-weight: 400; color: var(--cream); margin-bottom: 14px; }
+    .pillar-body { font-size: 13px; font-weight: 300; line-height: 1.75; color: var(--muted); }
 
-    .pillar-glyph {
-      font-size: 28px;
-      display: block;
-      margin-bottom: 24px;
-      line-height: 1;
-      filter: saturate(.6);
+    /* ─── GALLERY ───────────────────────────────── */
+    .gallery { background: var(--bg); }
+    .gallery-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 3px;
     }
-    .pillar-title {
-      font-family: var(--fd);
-      font-size: 24px;
-      font-weight: 400;
-      color: var(--cream);
-      margin-bottom: 14px;
+    .gallery-card {
+      position: relative; overflow: hidden; aspect-ratio: 4/3; cursor: pointer;
     }
-    .pillar-body {
-      font-size: 13px;
-      font-weight: 300;
-      line-height: 1.75;
-      color: var(--muted);
+    .gallery-card img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      filter: brightness(.72) saturate(.88);
+      transition: transform .65s cubic-bezier(.25,.46,.45,.94), filter .4s ease;
+    }
+    .gallery-card:hover img { transform: scale(1.07); filter: brightness(.88) saturate(1.05); }
+    .gallery-card-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(6,16,30,.75) 0%, transparent 55%);
+    }
+    .gallery-card-label {
+      position: absolute; bottom: 28px; left: 28px;
+    }
+    .gallery-card-tag {
+      display: block; font-size: 9px; font-weight: 400;
+      letter-spacing: .4em; text-transform: uppercase; color: var(--gold); margin-bottom: 6px;
+    }
+    .gallery-card-name {
+      font-family: var(--fd); font-size: 22px; font-weight: 300; color: var(--cream); line-height: 1.2;
     }
 
     /* ─── ABOUT ─────────────────────────────────── */
     .about {
-      padding: 120px 48px;
-      max-width: 1020px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 160px 1fr;
-      gap: 80px;
-      align-items: start;
+      padding: 120px 48px; max-width: 1020px; margin: 0 auto;
+      display: grid; grid-template-columns: 160px 1fr; gap: 80px; align-items: start;
     }
     .about-label {
-      font-size: 10px;
-      font-weight: 500;
-      letter-spacing: .42em;
-      text-transform: uppercase;
-      color: var(--gold);
-      padding-top: 10px;
-      position: sticky;
-      top: 40px;
+      font-size: 10px; font-weight: 500; letter-spacing: .42em; text-transform: uppercase;
+      color: var(--gold); padding-top: 10px; position: sticky; top: 40px;
     }
     .about-text h2 {
-      font-family: var(--fd);
-      font-size: clamp(34px, 5vw, 54px);
-      font-weight: 300;
-      line-height: 1.18;
-      color: var(--cream);
-      margin-bottom: 36px;
+      font-family: var(--fd); font-size: clamp(34px, 5vw, 54px); font-weight: 300;
+      line-height: 1.18; color: var(--cream); margin-bottom: 36px;
     }
     .about-text h2 em { font-style: italic; color: var(--gold-lt); }
-    .about-text p {
-      font-size: 15px;
-      font-weight: 300;
-      line-height: 1.9;
-      color: rgba(242,232,213,.68);
-      margin-bottom: 22px;
-    }
-
-    /* city badges */
-    .badges {
-      display: flex; flex-wrap: wrap;
-      gap: 10px; margin-top: 36px;
-    }
+    .about-text p { font-size: 15px; font-weight: 300; line-height: 1.9; color: rgba(242,232,213,.68); margin-bottom: 22px; }
+    .badges { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 36px; }
     .badge {
-      padding: 8px 18px;
-      border: 1px solid var(--line);
-      font-size: 11px;
-      font-weight: 300;
-      letter-spacing: .2em;
-      text-transform: uppercase;
-      color: var(--muted);
+      padding: 8px 18px; border: 1px solid var(--line);
+      font-size: 11px; font-weight: 300; letter-spacing: .2em; text-transform: uppercase; color: var(--muted);
     }
 
     /* ─── AMENITIES ──────────────────────────────── */
-    .amenities {
-      background: var(--bg2);
-      padding: 100px 48px;
-    }
-    .sec-head {
-      text-align: center;
-      margin-bottom: 60px;
-    }
-    .sec-label {
-      display: block;
-      font-size: 10px;
-      font-weight: 500;
-      letter-spacing: .42em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 16px;
-    }
-    .sec-title {
-      font-family: var(--fd);
-      font-size: clamp(30px, 5vw, 48px);
-      font-weight: 300;
-      color: var(--cream);
-      line-height: 1.2;
-    }
-
+    .amenities { background: var(--bg2); padding: 100px 48px; }
+    .sec-head { text-align: center; margin-bottom: 60px; }
+    .sec-label { display: block; font-size: 10px; font-weight: 500; letter-spacing: .42em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+    .sec-title { font-family: var(--fd); font-size: clamp(30px, 5vw, 48px); font-weight: 300; color: var(--cream); line-height: 1.2; }
     .am-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      max-width: 1000px;
-      margin: 0 auto;
-      border: 1px solid var(--line);
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      max-width: 1000px; margin: 0 auto; border: 1px solid var(--line);
     }
     .am-item {
-      padding: 28px 22px;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      border-right: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-      transition: background .3s;
+      padding: 28px 22px; display: flex; align-items: center; gap: 14px;
+      border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); transition: background .3s;
     }
     .am-item:hover { background: rgba(200,149,60,.04); }
     .am-item:nth-child(4n) { border-right: none; }
     .am-item:nth-last-child(-n+4) { border-bottom: none; }
-
     .am-icon { font-size: 20px; flex-shrink: 0; }
-    .am-name {
-      font-size: 13px;
-      font-weight: 300;
-      color: rgba(242,232,213,.82);
-      line-height: 1.4;
-    }
+    .am-name { font-size: 13px; font-weight: 300; color: rgba(242,232,213,.82); line-height: 1.4; }
 
     /* ─── QUOTE ──────────────────────────────────── */
-    .quote-wrap {
-      padding: 130px 48px;
-      text-align: center;
-      max-width: 820px;
-      margin: 0 auto;
-    }
-    .quote-mark {
-      font-family: var(--fd);
-      font-size: 140px;
-      line-height: .4;
-      color: var(--gold);
-      opacity: .25;
-      display: block;
-      margin-bottom: 48px;
-    }
-    .quote-text {
-      font-family: var(--fd);
-      font-size: clamp(22px, 4vw, 38px);
-      font-style: italic;
-      font-weight: 300;
-      line-height: 1.55;
-      color: var(--cream);
-    }
-    .quote-attr {
-      margin-top: 32px;
-      font-size: 11px;
-      font-weight: 300;
-      letter-spacing: .3em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
+    .quote-wrap { padding: 130px 48px; text-align: center; max-width: 820px; margin: 0 auto; }
+    .quote-mark { font-family: var(--fd); font-size: 140px; line-height: .4; color: var(--gold); opacity: .25; display: block; margin-bottom: 48px; }
+    .quote-text { font-family: var(--fd); font-size: clamp(22px, 4vw, 38px); font-style: italic; font-weight: 300; line-height: 1.55; color: var(--cream); }
+    .quote-attr { margin-top: 32px; font-size: 11px; font-weight: 300; letter-spacing: .3em; text-transform: uppercase; color: var(--muted); }
 
-    /* ─── LOCATION STRIP ─────────────────────────── */
+    /* ─── LOCATION ───────────────────────────────── */
     .location-strip {
       background: var(--bg3);
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
+      border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
       padding: 72px 48px;
     }
     .loc-inner {
-      max-width: 1000px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: center;
+      max-width: 1000px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
     }
-    .loc-label {
-      font-size: 10px;
-      font-weight: 500;
-      letter-spacing: .42em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 20px;
-      display: block;
+    .loc-label { font-size: 10px; font-weight: 500; letter-spacing: .42em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; display: block; }
+    .loc-title { font-family: var(--fd); font-size: clamp(28px, 4vw, 42px); font-weight: 300; line-height: 1.25; color: var(--cream); margin-bottom: 24px; }
+    .loc-text { font-size: 14px; font-weight: 300; line-height: 1.85; color: var(--muted); }
+    .loc-photo { aspect-ratio: 4/3; overflow: hidden; border: 1px solid var(--line); position: relative; }
+    .loc-photo img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      filter: brightness(.68) saturate(.8);
+      transition: transform .5s ease;
     }
-    .loc-title {
-      font-family: var(--fd);
-      font-size: clamp(28px, 4vw, 42px);
-      font-weight: 300;
-      line-height: 1.25;
-      color: var(--cream);
-      margin-bottom: 24px;
-    }
-    .loc-text {
-      font-size: 14px;
-      font-weight: 300;
-      line-height: 1.85;
-      color: var(--muted);
-    }
-    .loc-map {
-      aspect-ratio: 4/3;
-      background:
-        radial-gradient(ellipse 60% 80% at 55% 55%, rgba(200,149,60,.08) 0%, transparent 70%),
-        linear-gradient(135deg, var(--bg2), var(--bg3));
-      border: 1px solid var(--line);
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .loc-map-label {
-      font-family: var(--fd);
-      font-size: 42px;
-      font-weight: 300;
-      font-style: italic;
-      color: rgba(200,149,60,.3);
-      user-select: none;
-    }
-    /* dot grid */
-    .loc-map::before {
-      content: '';
-      position: absolute; inset: 0;
-      background-image: radial-gradient(rgba(200,149,60,.18) 1px, transparent 1px);
-      background-size: 24px 24px;
-    }
-    /* center pin */
-    .map-pin {
-      position: absolute;
-      width: 14px; height: 14px;
-      border-radius: 50%;
-      background: var(--gold);
-      box-shadow: 0 0 0 4px rgba(200,149,60,.25), 0 0 20px rgba(200,149,60,.4);
-      animation: pinPulse 2.5s ease-in-out infinite;
-    }
-    @keyframes pinPulse {
-      0%,100% { box-shadow: 0 0 0 4px rgba(200,149,60,.25), 0 0 20px rgba(200,149,60,.4); }
-      50%      { box-shadow: 0 0 0 10px rgba(200,149,60,.1), 0 0 35px rgba(200,149,60,.5); }
+    .loc-photo:hover img { transform: scale(1.04); }
+    .loc-photo-caption {
+      position: absolute; bottom: 14px; right: 16px;
+      font-size: 9px; letter-spacing: .3em; text-transform: uppercase; color: rgba(242,232,213,.45);
     }
 
     /* ─── FINAL CTA ──────────────────────────────── */
-    .final-cta {
-      padding: 140px 48px;
-      text-align: center;
-    }
-    .final-cta h2 {
-      font-family: var(--fd);
-      font-size: clamp(40px, 7vw, 80px);
-      font-weight: 300;
-      color: var(--cream);
-      line-height: 1.1;
-      margin-bottom: 20px;
-    }
-    .final-cta h2 em {
-      font-style: italic;
-      color: var(--gold-lt);
-    }
-    .final-cta .sub {
-      font-size: 13px;
-      font-weight: 300;
-      letter-spacing: .12em;
-      color: var(--muted);
-      margin-bottom: 56px;
-    }
+    .final-cta { padding: 140px 48px; text-align: center; }
+    .final-cta h2 { font-family: var(--fd); font-size: clamp(40px, 7vw, 80px); font-weight: 300; color: var(--cream); line-height: 1.1; margin-bottom: 20px; }
+    .final-cta h2 em { font-style: italic; color: var(--gold-lt); }
+    .final-cta .sub { font-size: 13px; font-weight: 300; letter-spacing: .12em; color: var(--muted); margin-bottom: 56px; }
     .btn-fill {
-      display: inline-block;
-      padding: 22px 88px;
-      background: var(--gold);
-      color: var(--bg);
-      font-family: var(--fb);
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: .38em;
-      text-transform: uppercase;
-      text-decoration: none;
+      display: inline-block; padding: 22px 88px;
+      background: var(--gold); color: var(--bg);
+      font-family: var(--fb); font-size: 11px; font-weight: 600;
+      letter-spacing: .38em; text-transform: uppercase; text-decoration: none;
       transition: background .3s ease, transform .2s ease, box-shadow .3s ease;
     }
-    .btn-fill:hover {
-      background: var(--gold-lt);
-      transform: translateY(-3px);
-      box-shadow: 0 16px 40px rgba(200,149,60,.25);
-    }
+    .btn-fill:hover { background: var(--gold-lt); transform: translateY(-3px); box-shadow: 0 16px 40px rgba(200,149,60,.25); }
 
     /* ─── FOOTER ─────────────────────────────────── */
     footer {
       padding: 40px 48px;
       border-top: 1px solid rgba(200,149,60,.1);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 16px;
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;
     }
-    footer p {
-      font-size: 11px;
-      font-weight: 300;
-      letter-spacing: .2em;
-      color: var(--muted);
-    }
-    footer a {
-      font-size: 11px;
-      font-weight: 300;
-      letter-spacing: .2em;
-      color: var(--gold);
-      text-decoration: none;
-    }
+    footer p { font-size: 11px; font-weight: 300; letter-spacing: .2em; color: var(--muted); }
+    footer a { font-size: 11px; font-weight: 300; letter-spacing: .2em; color: var(--gold); text-decoration: none; }
     footer a:hover { color: var(--gold-lt); }
 
     /* ─── ANIMATIONS ─────────────────────────────── */
@@ -629,20 +352,10 @@
       from { opacity: 0; transform: translateY(22px); }
       to   { opacity: 1; transform: translateY(0); }
     }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-    }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
-    .reveal {
-      opacity: 0;
-      transform: translateY(28px);
-      transition: opacity .85s ease, transform .85s ease;
-    }
-    .reveal.in {
-      opacity: 1;
-      transform: none;
-    }
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .85s ease, transform .85s ease; }
+    .reveal.in { opacity: 1; transform: none; }
     .d1 { transition-delay: .08s; }
     .d2 { transition-delay: .18s; }
     .d3 { transition-delay: .28s; }
@@ -652,6 +365,8 @@
       .pillars-inner { grid-template-columns: 1fr; }
       .pillar { border-right: none; border-bottom: 1px solid var(--line); }
       .pillar:last-child { border-bottom: none; }
+      .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-card { aspect-ratio: 16/9; }
       .about { grid-template-columns: 1fr; gap: 28px; }
       .about-label { position: static; }
       .am-grid { grid-template-columns: repeat(2, 1fr); }
@@ -662,7 +377,6 @@
       .loc-inner { grid-template-columns: 1fr; }
       .moon { top: 32px; right: 32px; width: 32px; height: 32px; }
     }
-
     @media (max-width: 480px) {
       .am-grid { grid-template-columns: 1fr; }
       .am-item { border-right: none !important; }
@@ -678,20 +392,14 @@
   <div class="stars"></div>
   <div class="moon"></div>
 
-  <!-- Acropolis / Parthenon silhouette -->
   <svg class="acropolis" viewBox="0 0 1100 280" xmlns="http://www.w3.org/2000/svg" fill="var(--cream)">
-    <!-- Hill -->
     <path d="M0 280 Q80 240 180 220 Q300 198 420 185 Q540 172 560 168 Q580 164 600 163 Q620 162 640 163 Q660 164 680 168 Q700 172 820 185 Q940 198 1060 220 Q1060 220 1100 240 L1100 280Z"/>
-    <!-- Stepped base (stylobate) -->
     <rect x="332" y="195" width="436" height="10"/>
     <rect x="344" y="205" width="412" height="9"/>
     <rect x="355" y="214" width="390" height="8"/>
-    <!-- Entablature/frieze -->
     <rect x="338" y="155" width="424" height="14"/>
     <rect x="344" y="146" width="412" height="9"/>
-    <!-- Pediment triangle -->
     <polygon points="344,146 756,146 550,95"/>
-    <!-- Columns (17 columns) -->
     <rect x="349" y="169" width="14" height="42"/>
     <rect x="371" y="169" width="14" height="42"/>
     <rect x="393" y="169" width="14" height="42"/>
@@ -714,27 +422,23 @@
   </svg>
 
   <div class="hero-inner">
-    <p class="eyebrow">Афины &nbsp;·&nbsp; Греция &nbsp;·&nbsp; Boutique Hotel</p>
-    <h1 class="hero-name">
-      <em>Heko</em><br>Collection
-    </h1>
+    <p class="eyebrow">Athens &nbsp;·&nbsp; Greece &nbsp;·&nbsp; Boutique Hotel</p>
+    <h1 class="hero-name"><em>Heko</em><br>Collection</h1>
     <p class="hero-sub">Athens &nbsp;II</p>
     <div class="rule"></div>
-    <p class="hero-tagline">Бутик-отель в сердце вечного города</p>
-    <a href="https://www.booking.com/hotel/gr/heko-collection-athens-2.ru.html?aid=1263239&label=PShare-Pulse-h8WqGb%401777849012&sid=f50c054ef507ae61d78535cb914eaf70&dist=0&keep_landing=1&sb_price_type=total&type=total&chal_t=1778496416250&force_referer="
-       target="_blank" rel="noopener noreferrer"
-       class="btn">
-      <span>Забронировать номер</span>
+    <p class="hero-tagline">A boutique hotel in the heart of the eternal city</p>
+    <a href="https://www.booking.com/hotel/gr/heko-collection-athens-2.en-gb.html?aid=1263239&label=PShare-Pulse-h8WqGb%401777849012&sid=f50c054ef507ae61d78535cb914eaf70&dist=0&keep_landing=1&sb_price_type=total&type=total&"
+       target="_blank" rel="noopener noreferrer" class="btn">
+      <span>Book a Room</span>
     </a>
   </div>
 
   <div class="scroll-hint">
-    <span>Узнать больше</span>
+    <span>Discover More</span>
     <div class="scroll-tick"></div>
   </div>
 </section>
 
-<!-- meander divider -->
 <div class="meander"></div>
 
 <!-- ═══════════════ PILLARS ═══════════════ -->
@@ -742,39 +446,71 @@
   <div class="pillars-inner">
     <div class="pillar reveal">
       <span class="pillar-glyph">🏛</span>
-      <h3 class="pillar-title">В центре Афин</h3>
-      <p class="pillar-body">В нескольких шагах от Акрополя, Монастираки и лучших таверн исторического центра</p>
+      <h3 class="pillar-title">Heart of Athens</h3>
+      <p class="pillar-body">Steps from the Acropolis, Monastiraki, and the finest tavernas of the historic centre</p>
     </div>
     <div class="pillar reveal d1">
       <span class="pillar-glyph">◈</span>
-      <h3 class="pillar-title">Камерный формат</h3>
-      <p class="pillar-body">Небольшой бутик-отель с индивидуальным подходом и атмосферой настоящего гостеприимства</p>
+      <h3 class="pillar-title">Intimate Scale</h3>
+      <p class="pillar-body">A small boutique hotel with a personal approach and the warmth of genuine Greek hospitality</p>
     </div>
     <div class="pillar reveal d2">
       <span class="pillar-glyph">✦</span>
-      <h3 class="pillar-title">Кураторский дизайн</h3>
-      <p class="pillar-body">Современная роскошь с душой Средиземноморья — мрамор, охра, мягкий эгейский свет</p>
+      <h3 class="pillar-title">Curated Design</h3>
+      <p class="pillar-body">Contemporary luxury with a Mediterranean soul — marble, ochre tones, soft Aegean light</p>
     </div>
   </div>
 </section>
 
-<!-- meander divider -->
 <div class="meander" style="background: var(--bg);"></div>
+
+<!-- ═══════════════ GALLERY ═══════════════ -->
+<section class="gallery">
+  <div class="gallery-grid">
+    <div class="gallery-card reveal">
+      <img src="https://images.unsplash.com/photo-1555993539-1732b0258235?auto=format&fit=crop&w=900&q=80"
+           alt="Acropolis of Athens at dusk" loading="lazy">
+      <div class="gallery-card-overlay"></div>
+      <div class="gallery-card-label">
+        <span class="gallery-card-tag">The View</span>
+        <span class="gallery-card-name">Acropolis &amp; Beyond</span>
+      </div>
+    </div>
+    <div class="gallery-card reveal d1">
+      <img src="https://images.unsplash.com/photo-1631049421450-348ccd7f8949?auto=format&fit=crop&w=900&q=80"
+           alt="Boutique hotel room interior" loading="lazy">
+      <div class="gallery-card-overlay"></div>
+      <div class="gallery-card-label">
+        <span class="gallery-card-tag">The Rooms</span>
+        <span class="gallery-card-name">Rest in Style</span>
+      </div>
+    </div>
+    <div class="gallery-card reveal d2">
+      <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=80"
+           alt="Greek architecture and whitewashed buildings" loading="lazy">
+      <div class="gallery-card-overlay"></div>
+      <div class="gallery-card-label">
+        <span class="gallery-card-tag">The City</span>
+        <span class="gallery-card-name">Ancient Colours</span>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ═══════════════ ABOUT ═══════════════ -->
 <section style="background: var(--bg);">
   <div class="about">
     <div class="reveal">
-      <p class="about-label">Об отеле</p>
+      <p class="about-label">About</p>
     </div>
     <div class="reveal d1">
-      <h2>Место, где <em>история</em><br>встречает современность</h2>
-      <p>Heko Collection Athens 2 — бутик-отель нового поколения, созданный для тех, кто ценит красоту деталей и подлинность впечатлений. Расположенный в самом сердце исторических Афин, он открывает вам тысячелетние кварталы прямо с порога.</p>
-      <p>Каждый номер — это тщательно продуманное пространство, где античные мотивы переплетаются с современным комфортом. Здесь всё создаёт ощущение, что вы попали домой — но домой очень красивым.</p>
+      <h2>Where <em>history</em><br>meets modernity</h2>
+      <p>Heko Collection Athens 2 is a new-generation boutique hotel created for those who value beauty in detail and authenticity in experience. Located in the very heart of historic Athens, it places millennia of history right at your doorstep.</p>
+      <p>Every room is a thoughtfully designed space where ancient motifs weave with contemporary comfort. Everything here is crafted to feel like home — a very beautiful one.</p>
       <div class="badges">
-        <span class="badge">⭐ Высокий рейтинг</span>
-        <span class="badge">📍 Центр города</span>
-        <span class="badge">🏛 Рядом с Акрополем</span>
+        <span class="badge">⭐ Top Rated</span>
+        <span class="badge">📍 City Centre</span>
+        <span class="badge">🏛 Near Acropolis</span>
         <span class="badge">✔ Booking.com</span>
       </div>
     </div>
@@ -784,22 +520,22 @@
 <!-- ═══════════════ AMENITIES ═══════════════ -->
 <section class="amenities">
   <div class="sec-head reveal">
-    <span class="sec-label">Удобства</span>
-    <h2 class="sec-title">Всё для вашего комфорта</h2>
+    <span class="sec-label">Amenities</span>
+    <h2 class="sec-title">Everything for your comfort</h2>
   </div>
   <div class="am-grid">
-    <div class="am-item reveal"><span class="am-icon">❄️</span><span class="am-name">Кондиционирование</span></div>
-    <div class="am-item reveal d1"><span class="am-icon">📶</span><span class="am-name">Бесплатный Wi-Fi</span></div>
-    <div class="am-item reveal d2"><span class="am-icon">🍳</span><span class="am-name">Завтрак включён</span></div>
-    <div class="am-item reveal d3"><span class="am-icon">🛎</span><span class="am-name">Консьерж-сервис</span></div>
-    <div class="am-item reveal"><span class="am-icon">🧴</span><span class="am-name">Туалетные принадлежности</span></div>
-    <div class="am-item reveal d1"><span class="am-icon">📺</span><span class="am-name">Smart TV в номерах</span></div>
-    <div class="am-item reveal d2"><span class="am-icon">☕</span><span class="am-name">Греческий кофе</span></div>
-    <div class="am-item reveal d3"><span class="am-icon">🗺</span><span class="am-name">Экскурсии по городу</span></div>
-    <div class="am-item reveal"><span class="am-icon">🔑</span><span class="am-name">Самостоятельный заезд</span></div>
-    <div class="am-item reveal d1"><span class="am-icon">🌿</span><span class="am-name">Эко-концепция</span></div>
-    <div class="am-item reveal d2"><span class="am-icon">🏙</span><span class="am-name">Вид на город</span></div>
-    <div class="am-item reveal d3"><span class="am-icon">🌅</span><span class="am-name">Терраса на крыше</span></div>
+    <div class="am-item reveal"><span class="am-icon">❄️</span><span class="am-name">Air Conditioning</span></div>
+    <div class="am-item reveal d1"><span class="am-icon">📶</span><span class="am-name">Free Wi-Fi</span></div>
+    <div class="am-item reveal d2"><span class="am-icon">🍳</span><span class="am-name">Breakfast Included</span></div>
+    <div class="am-item reveal d3"><span class="am-icon">🛎</span><span class="am-name">Concierge Service</span></div>
+    <div class="am-item reveal"><span class="am-icon">🧴</span><span class="am-name">Toiletries</span></div>
+    <div class="am-item reveal d1"><span class="am-icon">📺</span><span class="am-name">Smart TV in Rooms</span></div>
+    <div class="am-item reveal d2"><span class="am-icon">☕</span><span class="am-name">Greek Coffee</span></div>
+    <div class="am-item reveal d3"><span class="am-icon">🗺</span><span class="am-name">City Tours</span></div>
+    <div class="am-item reveal"><span class="am-icon">🔑</span><span class="am-name">Self Check-In</span></div>
+    <div class="am-item reveal d1"><span class="am-icon">🌿</span><span class="am-name">Eco-Friendly</span></div>
+    <div class="am-item reveal d2"><span class="am-icon">🏙</span><span class="am-name">City Views</span></div>
+    <div class="am-item reveal d3"><span class="am-icon">🌅</span><span class="am-name">Rooftop Terrace</span></div>
   </div>
 </section>
 
@@ -807,7 +543,7 @@
 <section style="background: var(--bg);">
   <div class="quote-wrap reveal">
     <span class="quote-mark">"</span>
-    <p class="quote-text">Афины — это не просто город. Это место, где каждый камень помнит вечность. Мы создали отель, который помогает вам это почувствовать.</p>
+    <p class="quote-text">Athens is not just a city. It is a place where every stone remembers eternity. We built a hotel that helps you feel exactly that.</p>
     <p class="quote-attr">— Heko Collection</p>
   </div>
 </section>
@@ -816,13 +552,14 @@
 <section class="location-strip">
   <div class="loc-inner">
     <div class="reveal">
-      <span class="loc-label">Расположение</span>
-      <h2 class="loc-title">В самом сердце<br>исторических Афин</h2>
-      <p class="loc-text">Монастираки, Акрополь, Плака — в пешей доступности. Метро в 3 минутах ходьбы. Аэропорт — 45 минут.</p>
+      <span class="loc-label">Location</span>
+      <h2 class="loc-title">In the heart of<br>historic Athens</h2>
+      <p class="loc-text">Monastiraki, the Acropolis, Plaka — all within walking distance. Metro station 3 minutes away. Athens International Airport 45 minutes by express train.</p>
     </div>
-    <div class="loc-map reveal d1">
-      <div class="loc-map-label">Ἀθῆναι</div>
-      <div class="map-pin"></div>
+    <div class="loc-photo reveal d1">
+      <img src="https://images.unsplash.com/photo-1603565816030-6b389eeb23cb?auto=format&fit=crop&w=900&q=80"
+           alt="Athens rooftop view with Acropolis" loading="lazy">
+      <span class="loc-photo-caption">Athens, Greece</span>
     </div>
   </div>
 </section>
@@ -830,27 +567,25 @@
 <!-- ═══════════════ FINAL CTA ═══════════════ -->
 <section class="final-cta">
   <div class="reveal">
-    <h2>Готовы к путешествию<br>в <em>Афины?</em></h2>
-    <p class="sub">Лучшая цена — на Booking.com</p>
-    <a href="https://www.booking.com/hotel/gr/heko-collection-athens-2.ru.html?aid=1263239&label=PShare-Pulse-h8WqGb%401777849012&sid=f50c054ef507ae61d78535cb914eaf70&dist=0&keep_landing=1&sb_price_type=total&type=total&chal_t=1778496416250&force_referer="
-       target="_blank" rel="noopener noreferrer"
-       class="btn-fill">
-      Забронировать номер
+    <h2>Ready to discover<br><em>Athens?</em></h2>
+    <p class="sub">Best price guaranteed on Booking.com</p>
+    <a href="https://www.booking.com/hotel/gr/heko-collection-athens-2.en-gb.html?aid=1263239&label=PShare-Pulse-h8WqGb%401777849012&sid=f50c054ef507ae61d78535cb914eaf70&dist=0&keep_landing=1&sb_price_type=total&type=total&"
+       target="_blank" rel="noopener noreferrer" class="btn-fill">
+      Book a Room
     </a>
   </div>
 </section>
 
 <!-- ═══════════════ FOOTER ═══════════════ -->
 <footer>
-  <p>Heko Collection Athens 2 &nbsp;·&nbsp; Афины, Греция</p>
-  <a href="https://www.booking.com/hotel/gr/heko-collection-athens-2.ru.html?aid=1263239&label=PShare-Pulse-h8WqGb%401777849012&sid=f50c054ef507ae61d78535cb914eaf70&dist=0&keep_landing=1&sb_price_type=total&type=total&chal_t=1778496416250&force_referer="
+  <p>Heko Collection Athens 2 &nbsp;·&nbsp; Athens, Greece</p>
+  <a href="https://www.booking.com/hotel/gr/heko-collection-athens-2.en-gb.html?aid=1263239&label=PShare-Pulse-h8WqGb%401777849012&sid=f50c054ef507ae61d78535cb914eaf70&dist=0&keep_landing=1&sb_price_type=total&type=total&"
      target="_blank" rel="noopener noreferrer">
     Booking.com →
   </a>
 </footer>
 
 <script>
-  // Scroll-reveal
   const els = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver(
     entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); }),
