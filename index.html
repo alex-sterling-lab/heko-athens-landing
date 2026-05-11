@@ -279,32 +279,29 @@
     .sec-label { display: block; font-size: 10px; font-weight: 500; letter-spacing: .42em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
     .sec-title { font-family: var(--fd); font-size: clamp(38px, 5.5vw, 62px); font-weight: 300; color: var(--cream); line-height: 1.15; }
     .am-grid {
-      display: flex; flex-wrap: nowrap; overflow-x: auto;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
       max-width: 1260px; margin: 0 auto;
-      scrollbar-width: none;
     }
-    .am-grid::-webkit-scrollbar { display: none; }
     .am-item {
-      flex: 1 0 0;
-      min-width: 90px;
-      padding: 36px 16px 32px;
-      display: flex; flex-direction: column; align-items: center; gap: 16px;
+      padding: 52px 20px 44px;
+      display: flex; flex-direction: column; align-items: center; gap: 20px;
       text-align: center;
       transition: background .35s ease;
     }
     .am-item:hover { background: rgba(200,149,60,.04); }
     .am-icon {
-      width: 44px; height: 44px; color: var(--gold); flex-shrink: 0;
+      width: 64px; height: 64px; color: var(--gold); flex-shrink: 0;
     }
     .am-icon svg {
       width: 100%; height: 100%;
       stroke: currentColor; fill: none;
-      stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round;
+      stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round;
     }
     .am-name {
       font-family: var(--fb); font-size: 11px; font-weight: 300;
-      letter-spacing: .12em; text-transform: uppercase;
-      color: rgba(242,232,213,.65); line-height: 1.4;
+      letter-spacing: .14em; text-transform: uppercase;
+      color: rgba(242,232,213,.6); line-height: 1.4;
     }
 
     /* ─── QUOTE ──────────────────────────────────── */
@@ -382,7 +379,9 @@
       .gallery-card { aspect-ratio: 16/9; }
       .about { grid-template-columns: 1fr; gap: 28px; }
       .about-label { position: static; }
-      .am-item { min-width: 80px; padding: 28px 12px; }
+      .am-grid { grid-template-columns: repeat(3, 1fr); }
+      .am-item { padding: 36px 16px 30px; }
+      .am-icon { width: 48px; height: 48px; }
       .moon { top: 32px; right: 32px; width: 32px; height: 32px; }
     }
     @media (max-width: 480px) {
