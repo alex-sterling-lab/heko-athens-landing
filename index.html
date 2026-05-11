@@ -302,24 +302,19 @@
     .location-strip {
       background: var(--bg3);
       border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
-      padding: 72px 48px;
+      padding: 100px 48px;
+      text-align: center;
     }
-    .loc-inner {
-      max-width: 1000px; margin: 0 auto;
-      display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
-    }
+    .loc-inner { max-width: 680px; margin: 0 auto; }
     .loc-label { font-size: 10px; font-weight: 500; letter-spacing: .42em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; display: block; }
-    .loc-title { font-family: var(--fd); font-size: clamp(28px, 4vw, 42px); font-weight: 300; line-height: 1.25; color: var(--cream); margin-bottom: 24px; }
-    .loc-text { font-size: 14px; font-weight: 300; line-height: 1.85; color: var(--muted); }
-    .loc-map {
-      aspect-ratio: 4/3;
-      border: 1px solid var(--line);
-      position: relative;
-      overflow: hidden;
+    .loc-title { font-family: var(--fd); font-size: clamp(28px, 4vw, 48px); font-weight: 300; line-height: 1.2; color: var(--cream); margin-bottom: 28px; }
+    .loc-text { font-size: 15px; font-weight: 300; line-height: 1.9; color: var(--muted); margin-bottom: 40px; }
+    .loc-landmarks {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;
     }
-    .loc-map iframe {
-      width: 100%; height: 100%; border: 0; display: block;
-      filter: invert(92%) hue-rotate(180deg) saturate(0.75) brightness(0.88);
+    .loc-landmark {
+      padding: 10px 22px; border: 1px solid var(--line);
+      font-size: 11px; font-weight: 300; letter-spacing: .22em; text-transform: uppercase; color: var(--muted);
     }
 
     /* ─── FINAL CTA ──────────────────────────────── */
@@ -373,7 +368,6 @@
       .am-item:nth-child(2n) { border-right: none; }
       .am-item:nth-last-child(-n+4) { border-bottom: 1px solid var(--line); }
       .am-item:nth-last-child(-n+2) { border-bottom: none; }
-      .loc-inner { grid-template-columns: 1fr; }
       .moon { top: 32px; right: 32px; width: 32px; height: 32px; }
     }
     @media (max-width: 480px) {
@@ -570,18 +564,16 @@
 
 <!-- ═══════════════ LOCATION ═══════════════ -->
 <section class="location-strip">
-  <div class="loc-inner">
-    <div class="reveal">
-      <span class="loc-label">Location</span>
-      <h2 class="loc-title">In the heart of<br>historic Athens</h2>
-      <p class="loc-text">Monastiraki, the Acropolis, Plaka — all within walking distance. Metro station 3 minutes away. Athens International Airport 45 minutes by express train.</p>
-    </div>
-    <div class="loc-map reveal d1">
-      <iframe
-        src="https://maps.google.com/maps?q=Heko+Collection+Athens+2,+Athens,+Greece&output=embed&hl=en&z=16"
-        allowfullscreen loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+  <div class="loc-inner reveal">
+    <span class="loc-label">Location</span>
+    <h2 class="loc-title">In the heart of<br>historic Athens</h2>
+    <p class="loc-text">Monastiraki, the Acropolis, Plaka — all within walking distance.<br>Metro station 3 minutes away. Athens International Airport 45 minutes by express train.</p>
+    <div class="loc-landmarks">
+      <span class="loc-landmark">🏛 Acropolis — 5 min</span>
+      <span class="loc-landmark">🛍 Monastiraki — 3 min</span>
+      <span class="loc-landmark">🍽 Plaka — 4 min</span>
+      <span class="loc-landmark">🚇 Metro — 3 min</span>
+      <span class="loc-landmark">✈ Airport — 45 min</span>
     </div>
   </div>
 </section>
