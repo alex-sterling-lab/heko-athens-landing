@@ -280,29 +280,28 @@
     .sec-title { font-family: var(--fd); font-size: clamp(38px, 5.5vw, 62px); font-weight: 300; color: var(--cream); line-height: 1.15; }
     .am-grid {
       display: grid; grid-template-columns: repeat(4, 1fr);
-      max-width: 1160px; margin: 0 auto; border: 1px solid var(--line);
+      max-width: 1160px; margin: 0 auto;
+      gap: 0;
     }
     .am-item {
-      padding: 56px 24px 48px;
-      display: flex; flex-direction: column; align-items: center; gap: 20px;
+      padding: 52px 28px 44px;
+      display: flex; flex-direction: column; align-items: center; gap: 22px;
       text-align: center;
-      border-right: 1px solid var(--line); border-bottom: 1px solid var(--line);
-      position: relative; overflow: hidden;
       transition: background .35s ease;
     }
-    .am-item::after {
-      content: '';
-      position: absolute; top: 0; left: 0; right: 0; height: 2px;
-      background: linear-gradient(90deg, transparent, var(--gold), transparent);
-      transform: scaleX(0);
-      transition: transform .4s ease;
+    .am-item:hover { background: rgba(200,149,60,.04); }
+    .am-icon {
+      width: 32px; height: 32px; color: var(--gold); flex-shrink: 0;
     }
-    .am-item:hover::after { transform: scaleX(1); }
-    .am-item:hover { background: rgba(200,149,60,.05); }
-    .am-item:nth-child(4n) { border-right: none; }
-    .am-item:nth-last-child(-n+4) { border-bottom: none; }
-    .am-icon { font-size: 36px; line-height: 1; }
-    .am-name { font-family: var(--fd); font-size: 19px; font-weight: 400; color: var(--cream); line-height: 1.3; }
+    .am-icon svg {
+      width: 100%; height: 100%;
+      stroke: currentColor; fill: none;
+      stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round;
+    }
+    .am-name {
+      font-family: var(--fd); font-size: 18px; font-weight: 400;
+      color: rgba(242,232,213,.85); line-height: 1.3;
+    }
 
     /* ─── QUOTE ──────────────────────────────────── */
     .quote-wrap { padding: 130px 48px; text-align: center; max-width: 820px; margin: 0 auto; }
@@ -381,17 +380,10 @@
       .about-label { position: static; }
       .am-grid { grid-template-columns: repeat(2, 1fr); }
       .am-item { padding: 40px 20px 36px; }
-      .am-item:nth-child(4n) { border-right: 1px solid var(--line); }
-      .am-item:nth-child(2n) { border-right: none; }
-      .am-item:nth-last-child(-n+4) { border-bottom: 1px solid var(--line); }
-      .am-item:nth-last-child(-n+2) { border-bottom: none; }
       .moon { top: 32px; right: 32px; width: 32px; height: 32px; }
     }
     @media (max-width: 480px) {
       .am-grid { grid-template-columns: repeat(2, 1fr); }
-      .am-item { border-right: 1px solid var(--line) !important; }
-      .am-item:nth-child(2n) { border-right: none !important; }
-      .am-item:last-child { border-bottom: none; }
       footer { flex-direction: column; text-align: center; }
     }
   </style>
@@ -556,18 +548,54 @@
     <h2 class="sec-title">Everything for your comfort</h2>
   </div>
   <div class="am-grid">
-    <div class="am-item reveal"><span class="am-icon">❄️</span><span class="am-name">Air Conditioning</span></div>
-    <div class="am-item reveal d1"><span class="am-icon">📶</span><span class="am-name">Free Wi-Fi</span></div>
-    <div class="am-item reveal d2"><span class="am-icon">🍳</span><span class="am-name">Breakfast Included</span></div>
-    <div class="am-item reveal d3"><span class="am-icon">🛎</span><span class="am-name">Concierge Service</span></div>
-    <div class="am-item reveal"><span class="am-icon">🧴</span><span class="am-name">Toiletries</span></div>
-    <div class="am-item reveal d1"><span class="am-icon">📺</span><span class="am-name">Smart TV in Rooms</span></div>
-    <div class="am-item reveal d2"><span class="am-icon">☕</span><span class="am-name">Greek Coffee</span></div>
-    <div class="am-item reveal d3"><span class="am-icon">🗺</span><span class="am-name">City Tours</span></div>
-    <div class="am-item reveal"><span class="am-icon">🔑</span><span class="am-name">Self Check-In</span></div>
-    <div class="am-item reveal d1"><span class="am-icon">🌿</span><span class="am-name">Eco-Friendly</span></div>
-    <div class="am-item reveal d2"><span class="am-icon">🏙</span><span class="am-name">City Views</span></div>
-    <div class="am-item reveal d3"><span class="am-icon">🌅</span><span class="am-name">Rooftop Terrace</span></div>
+    <div class="am-item reveal">
+      <span class="am-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
+      <span class="am-name">Air Conditioning</span>
+    </div>
+    <div class="am-item reveal d1">
+      <span class="am-icon"><svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1.5" fill="currentColor" stroke="none"/></svg></span>
+      <span class="am-name">Free Wi-Fi</span>
+    </div>
+    <div class="am-item reveal d2">
+      <span class="am-icon"><svg viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M3 8h15v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8z"/><line x1="6" y1="2" x2="6" y2="5"/><line x1="10" y1="2" x2="10" y2="5"/><line x1="14" y1="2" x2="14" y2="5"/></svg></span>
+      <span class="am-name">Breakfast Included</span>
+    </div>
+    <div class="am-item reveal d3">
+      <span class="am-icon"><svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></span>
+      <span class="am-name">Concierge Service</span>
+    </div>
+    <div class="am-item reveal">
+      <span class="am-icon"><svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></span>
+      <span class="am-name">Toiletries</span>
+    </div>
+    <div class="am-item reveal d1">
+      <span class="am-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span>
+      <span class="am-name">Smart TV</span>
+    </div>
+    <div class="am-item reveal d2">
+      <span class="am-icon"><svg viewBox="0 0 24 24"><path d="M17 8h1a4 4 0 0 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8z"/></svg></span>
+      <span class="am-name">Greek Coffee</span>
+    </div>
+    <div class="am-item reveal d3">
+      <span class="am-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+      <span class="am-name">City Tours</span>
+    </div>
+    <div class="am-item reveal">
+      <span class="am-icon"><svg viewBox="0 0 24 24"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg></span>
+      <span class="am-name">Self Check-In</span>
+    </div>
+    <div class="am-item reveal d1">
+      <span class="am-icon"><svg viewBox="0 0 24 24"><path d="M2 22c1.25-1.25 2.48-4.74 5-5 2.52-.26 3.78-1.95 4-4 .68-6.53 6-9 6-9-6 0-13.16 5.47-15 9-2.22 4.32 0 9 0 9z"/><path d="M14 14c.76-1.38 2-2.5 4-2"/></svg></span>
+      <span class="am-name">Eco-Friendly</span>
+    </div>
+    <div class="am-item reveal d2">
+      <span class="am-icon"><svg viewBox="0 0 24 24"><path d="M1 6l7-4 8 4 7-4v16l-7 4-8-4-7 4V6z"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg></span>
+      <span class="am-name">City Views</span>
+    </div>
+    <div class="am-item reveal d3">
+      <span class="am-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span>
+      <span class="am-name">Rooftop Terrace</span>
+    </div>
   </div>
 </section>
 
